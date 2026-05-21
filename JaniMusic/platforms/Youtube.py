@@ -23,7 +23,7 @@ import traceback
 from JaniMusic import LOGGER
 
 API_URL = "https://teaminflex.xyz"  # Change to your API server URL
-API_KEY = "YOUTUBE_API_KEY"
+API_KEY = "INFLEX25174928D"
 
 def cookie_txt_file():
     cookie_dir = f"{os.getcwd()}/cookies"
