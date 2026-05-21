@@ -12,7 +12,7 @@
 # Step 3: Optionally, change API_URL if different
 
 API_URL = "https://teaminflex.xyz"  # <-- Keep as is unless bot provides a different URL
-API_KEY = "YOUR_API_KEY_HERE"  # <-- Replace this with your key from @InflexAPIBot
+API_KEY = "INFLEX43051528D"  # <-- Replace this with your key from @InflexAPIBot
 
 
 # ==============================================
