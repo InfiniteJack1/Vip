@@ -12,15 +12,14 @@
 # Step 3: Optionally, change API_URL if different
 
 API_URL = "https://teaminflex.xyz"  # <-- Keep as is unless bot provides a different URL
-API_KEY = "INFLEX43051528D"  # <-- Replace this with your key from @InflexAPIBot
-
+API_KEY = "YOUR_API_KEY_HERE"  # <-- Replace this with your key from @InflexAPIBot
 
 # ==============================================
 # 🎵 AUDIO DOWNLOAD
 # ==============================================
 async def download_song(link: str) -> str:
     video_id = link.split('v=')[-1].split('&')[0] if 'v=' in link else link
-    logger = LOGGER("InflexMusic/platforms/Youtube.py")
+    logger = LOGGER("JaniMusic/platforms/Youtube.py")
     logger.info(f"🎵 [AUDIO] Starting download process for ID: {video_id}")
 
     if not video_id or len(video_id) < 3:
@@ -86,7 +85,7 @@ async def download_song(link: str) -> str:
 # ==============================================
 async def download_video(link: str) -> str:
     video_id = link.split('v=')[-1].split('&')[0] if 'v=' in link else link
-    logger = LOGGER("InflexMusic/platforms/Youtube.py")
+    logger = LOGGER("JaniMusic/platforms/Youtube.py")
     logger.info(f"🎥 [VIDEO] Starting download process for ID: {video_id}")
 
     if not video_id or len(video_id) < 3:
