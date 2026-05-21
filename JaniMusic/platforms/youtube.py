@@ -20,7 +20,7 @@ API_KEY = "INFLEX43051528D"  # <-- Replace this with your key from @InflexAPIBot
 # ==============================================
 async def download_song(link: str) -> str:
     video_id = link.split('v=')[-1].split('&')[0] if 'v=' in link else link
-    logger = LOGGER("JaniMusic/platforms/Youtube.py")
+    logger = LOGGER("InflexMusic/platforms/Youtube.py")
     logger.info(f"🎵 [AUDIO] Starting download process for ID: {video_id}")
 
     if not video_id or len(video_id) < 3:
@@ -86,7 +86,7 @@ async def download_song(link: str) -> str:
 # ==============================================
 async def download_video(link: str) -> str:
     video_id = link.split('v=')[-1].split('&')[0] if 'v=' in link else link
-    logger = LOGGER("JaniMusic/platforms/Youtube.py")
+    logger = LOGGER("InflexMusic/platforms/Youtube.py")
     logger.info(f"🎥 [VIDEO] Starting download process for ID: {video_id}")
 
     if not video_id or len(video_id) < 3:
